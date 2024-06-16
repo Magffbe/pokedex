@@ -1,0 +1,17 @@
+<h2> Contenido pantallados</h2>
+<p>Tenemos un total de {{conteo}} pokemons</p>
+
+<div *ngFor="let pokemon of pokemons">
+    <a href={{pokemon.url}}>{{pokemon.name}}</a>
+</div>
+
+<div *ngFor="let pokemon of detallesPokemon">
+    <h3>{{pokemon.id}} - {{pokemon.name}}</h3>
+    <p>{{pokemon.height}}</p>
+    <img src={{pokemon.sprites.front_default}} alt=""/>
+
+    
+</div>
+
+<button (click)="agregarNotificacionpantallados()">Agregar notificacion</button>
+ 
